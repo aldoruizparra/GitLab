@@ -46,12 +46,17 @@ git checkout test
 git merge top_N
 ```
 
+If we ran the following commands, the head pointer will point to the test branch. Afterwards, it will add any changes from the top_N branch and combine it together 
+into the test branch.
+
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
+
+If we ran the following commands, git will point the head pointer to top_ten. Afterwards, it will attempt to add any changes from test into the top_ten branch. Given that top_ten branch is the branch with changes, it will either remove the changes placed in the file, or there will be a conflict with git.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -60,3 +65,5 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+
+It will first point the head pointer to test to make it the current branch. Afterwards, it will demonstrate all the changes that have occured in top_ten and top_N. It will provide an opportunity to combine all the following changes if desired.
