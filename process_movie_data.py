@@ -3,8 +3,8 @@
 import csv
 
 
-def find_top_5(filename):
-    """Finds the top 5 highest grossing movies in a CSV dataset.
+def find_top_10(filename):
+    """Finds the top 10 highest grossing movies in a CSV dataset.
        Input: filename, a string - points to filename of dataset
        Output: None
        Effect: should print five lines of text
@@ -35,4 +35,4 @@ def find_top_5(filename):
 # Movie data comes from "Movie Gross and Ratings" dataset on Kaggle by Yashwanth Sharaf
 # https://www.kaggle.com/datasets/thedevastator/movie-gross-and-ratings-from-1989-to-2014
 if __name__ == "__main__":
-    find_top_5("Movies_gross_rating.csv")
+    find_top_10("Movies_gross_rating.csv")
